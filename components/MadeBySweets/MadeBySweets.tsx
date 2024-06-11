@@ -10,8 +10,8 @@ const MadeBySweets = () => (
       Based in Colombia 🇨🇴
     </a>
     <a href={GITHUB_REPO} target="_blank" className="flex justify-center items-center gap-5">
-      made with <img className="rounded rounded-full" src="/images/fam-logo.jpeg" width="50" /> by
-      fam
+      made with <img className="rounded rounded-full" src="/images/zorb.png" width="50" /> by
+      sweetman
     </a>
   </div>
 );
