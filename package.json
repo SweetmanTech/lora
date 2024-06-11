@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "https://warpcast.com/crazzywizard",
+  "author": "https://warpcast.com/sweetman.eth",
   "license": "MIT",
   "dependencies": {
     "@vercel/og": "^0.6.2",
