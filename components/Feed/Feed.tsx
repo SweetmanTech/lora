@@ -2,12 +2,12 @@ import useRewardsDepositLogs from '@/hooks/useRewardsDepositLogs';
 import Collection from '../Collection';
 
 const Feed = () => {
-  const { logs } = useRewardsDepositLogs();
-
+  const { logs, results } = useRewardsDepositLogs();
+  console.log('SWEETS RESULTS', results);
   return (
     <div>
-      {logs.length > 0 ? (
-        logs.map((log, index) => <Collection collection={log.args.from} key={index} />)
+      {results.length > 0 ? (
+        results.map((log, index) => <Collection collection={log} key={index} />)
       ) : (
         <p>No logs available.</p>
       )}
