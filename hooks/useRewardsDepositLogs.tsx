@@ -49,7 +49,7 @@ const useRewardsDepositLogs = () => {
 
       // Extract URI and Owner results
       const urlsAndContracts = filteredResponse.map((log: any, index: number) => ({
-        url: getLink(multicallResults[index * 2].result),
+        url: getLink(multicallResults[index * 2].result as string),
         contract: log.args.from,
         owner: multicallResults[index * 2 + 1].result,
       }));
@@ -74,7 +74,7 @@ const useRewardsDepositLogs = () => {
       };
 
       try {
-        const fetchedResults = await fetchUrls(filteredUrlsAndContracts);
+        const fetchedResults = await fetchUrls(filteredUrlsAndContracts as any);
         // Filter out failed fetches (where status is 'rejected' or value is null)
         const successfulResults = fetchedResults
           .filter((result) => result.status === 'fulfilled' && result.value !== null)
