@@ -2,7 +2,7 @@
 
 🔆 OᑎᑕᕼᗩIᑎ ᔑᑌᗰᗰEᖇ 🔆
 
-lite zora client
+LORA = lite zora
 
 - `viem` - RPC library
 - `zora` - Media protocol
