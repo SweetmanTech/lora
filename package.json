@@ -12,6 +12,7 @@
   "author": "https://warpcast.com/sweetman.eth",
   "license": "MIT",
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.4",
     "@vercel/og": "^0.6.2",
     "clsx": "^2.1.0",
     "next": "13.5.6",
