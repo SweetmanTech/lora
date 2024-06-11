@@ -1,3 +1,5 @@
+import { DESCRIPTION, TITLE } from '@/lib/consts';
+
 const LandingPageHeader = () => (
   <div
     style={{ display: 'flex' }}
@@ -8,13 +10,13 @@ const LandingPageHeader = () => (
       className="text-4xl font-bold tracking-tighter sm:text-5xl"
       tw="text-7xl font-black pt-[100px]"
     >
-      party zora collect.
+      {TITLE}.
     </p>
     <p
       className="max-w-[600px] text-md md:text-xl font-bold"
       tw="max-w-[600px] text-4xl font-bold mt-[-25]"
     >
-      bring your own party. collect on zora.
+      {DESCRIPTION}.
     </p>
   </div>
 );
