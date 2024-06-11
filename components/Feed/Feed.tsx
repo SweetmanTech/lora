@@ -2,8 +2,7 @@ import useRewardsDepositLogs from '@/hooks/useRewardsDepositLogs';
 import Collection from '../Collection';
 
 const Feed = () => {
-  const { logs, results } = useRewardsDepositLogs();
-  console.log('SWEETS RESULTS', results);
+  const { results } = useRewardsDepositLogs();
   return (
     <div>
       {results.length > 0 ? (

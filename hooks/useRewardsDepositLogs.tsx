@@ -6,13 +6,11 @@ import { CHAIN_ID } from '@/lib/consts';
 import getLink from '@/lib/getLink';
 
 const useRewardsDepositLogs = () => {
-  const [logs, setLogs] = useState<any[]>([]);
   const [results, setResults] = useState<any[]>([]);
 
   useEffect(() => {
     const init = async () => {
       const response = await getRewardsDepositLogs();
-      setLogs(response as any);
 
       const zoraUriCall = {
         abi: zoraCreator1155ImplABI,
@@ -87,7 +85,7 @@ const useRewardsDepositLogs = () => {
     init();
   }, []);
 
-  return { logs, results };
+  return { results };
 };
 
 export default useRewardsDepositLogs;
